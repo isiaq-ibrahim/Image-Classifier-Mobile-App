@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Image Classifier"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textSize="22sp"
+        android:fontFamily="@font/poppins_bold"
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_below="@id/app_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        />
+
+    <Button
+        android:id="@+id/takePhoto"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@id/imageView"
+        android:text="Take Photo from Camera"
+        android:layout_marginTop="20dp"
+        />
+
+    <Button
+        android:id="@+id/selectPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Select Photo from Gallery"
+        android:layout_below="@id/takePhoto"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:id="@+id/predictImage"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/selectPhoto"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Predict Image"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/resultTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/predictImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Result:" />
+
+</RelativeLayout>
